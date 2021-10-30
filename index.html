@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shahat CV</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <div class="magicList">
+      <ul id="navbar__list"> </ul>
+    </div>
+    </nav>
+    <div class="toggleButton">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+  </header>
+  <main>
+
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="section__wrapper">
+    <section id="section1" data-nav="Contact"  class="section--active">
+      <div class="landing__container">
+        <header class="main__hero">
+          <div class="firstWrap">
+            <h1>Abdulrahman Mohamed Elshahat</h1>
+            <img src="sh.jpg" alt="profile" width="250" align="right">
+            <h3> <strong>Email:  </strong> abdulrahman.elshahat@yahoo.com|
+              <strong>Phone:</strong>+201095193215 || +201124040951</h3>
+
+          </div>
+        </header>
+      </div>
+    </section>
+    <section id="section2" data-nav="Professional Summary" >
+      <div class="landing__container">
+        <h2>Professional Summary</h2>
+
+          <p>As an Overview I am Production Engineer Graduated From Alexandria University jun-2019 and since That I worked as a Production-Process Engineer at Masar For Engineering Industries (Sheet metal Forming Company), In Which I saved 35 square meters in work place out of 40.5 square meters by storing raw material vertically.</p>
+
+          <p>I Have Self Learning Journey as I earned Lean Six Sigma Yellow Belt from Technical University of Munich and studied three out of five courses Micromasters Program in Supply Chain Management By MIT. Also I earned IBM Professional Certificate in Data Science and Udacity Data Analysis Track Certificate.</p>
+
+          <p>Now I am Studying Applied Data Science with Python Specialization By University of Michigan I finished 3 out of five courses.</p>
+
+          <p>Also I added to my Journey Udacity Introduction To HTML and CSS, javascript intro and front end devolopment Nano degree</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Education">
+      <div class="landing__container">
+        <h2>Education</h2>
+        <p><strong>B.S. in Production Engineering, Alexandria University.</strong> <em> 09/2014 - 06/2019</em></p>
+        <p> <strong> Graduation Project: </strong> Mathematical Modeling for Dynamic Interaction Between Rotary
+Swaging Machine Die Head and Feed Drive System. <br><strong>Grade:</strong> <em>Excellent</em> </p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Work Experience">
+      <div class="landing__container">
+        <h2>Work Experience</h2>
+        <p><strong>Production - Process Engineer</strong> <em>MASAR for Engineering Industries</em> <em>06/2019 - Present</em><br>
+
+        <ul>
+        <li>Leading 50 technicians and workers on production line daily tasks.</li>
+        <li> Identifying production line capacity and calculating productivity bonus.</li>
+        <li>Analyzing and reporting Daily, Weekly and Monthly Production rates.</li>
+        <li>Improved Process by saving 35 square meters in work place out of 40.5 square meters.</li>
+        </ul>
+        </p>
+        <p><strong>Trainee</strong> <em>ANRPC - Alexandria National Refining & Petrochemicals Co.</em> <em>07/2017 - 08/2017</em><br>
+        </p>
+        <p><strong>Trainee</strong> <em>TITAN CEMENT EGYPT</em> <em>06/2017 - 07/2017</em><br>
+        </p>
+      </div>
+    </section>
+    <section id="section5" data-nav="Professional Learning">
+      <div class="landing__container">
+        <h2>Professional Learning</h2>
+        <p><strong>Applied Data Science with Python Specialization - University of Michigan- Coursera - </strong><em>04/2020 – Present</em>
+        </p>
+        <p><strong>IBM Data Science Professional Certificate - IBM - Coursera - </strong><em>03/2020 – 04/2020 </em>
+        </p>
+        <p><strong>Certified Lean Six Sigma Yellow Belt - Technical University of Munich - EDX - </strong><em>11/2019 - 03/2020</em>
+        </p>
+        <p><strong>Become a Project Manager - Learning path - LinkedIn Learning - </strong><em>10/2019 - 11/2019 </em>
+        </p>
+        <p><strong>Data Analy2sis Track - One Million Arab Coders - Udacity - </strong><em>09/2019 - 10/2019</em>
+        </p>
+        <p><strong>SC0,1,2 Supply Chain Analytics, Fundamentals and Design - MIT - EDX</strong><em>09/2017 - 06/2018</em><br>
+          Three of five courses MicroMasters program in Supply Chain Management from
+          Massachusetts Institute of Technology.
+        </p>
+
+      </div>
+    </section>
+    <section id="section6" data-nav="Extracurricular Activities">
+      <div class="landing__container">
+        <h2>Extracurricular Activities</h2>
+        <p><strong>Public Relations Committee Member PED pioneers team -  </strong><em>09/2017 - 08/2018</em>
+        </p>
+        <p><strong>Head of Public Relations Committee Rakez team - </strong><em>09/2016 - 08/2017</em>
+        </p>
+        <p><strong>Vice Head of Production Engineering Department Board Rakez team - </strong><em>09/2015 - 08/2016</em><br>
+          Led preparatory year team through guiding 1500 preparatory year students in their new environment.
+        </p>
+      </div>
+    </section>
+    <section id="section7" data-nav="Academic Projects ">
+      <div class="landing__container">
+        <h2>Academic Projects</h2>
+        <p><strong>Automatically controlled self-opening door (Using Arduino and sensors) - </strong><em>11/2018 - 12/2018</em>
+        </p>
+        <p><strong>Deep Drawing theoretically and practically (Case study in Zahran steel) <em>Team leader</em> - </strong><em>11/2017 - 12/2017</em>
+        </p>
+        <p><strong>Rolling Processes theoretically and practically (Case study in Ezz steel) Team leader <em>Team leader</em> - </strong><em>11/2016 - 12/2016</em>
+        </p>
+
+      </div>
+    </section>
+    <section id="section8" data-nav="Technical Skills">
+      <div class="landing__container">
+        <h2>Technical Skills</h2>
+        <div class="firstWrap">
+          <ul>
+            <li> Microsoft Excel<br> (Statistical Analysis) </li>
+            <li> Microsoft Word</li>
+          </ul>
+          <ul>
+            <li> Microsoft PowerPoint </li>
+            <li> Microsoft Project</li>
+            <li> Lean Six Sigma</li>
+          </ul>
+          <ul>
+            <li> SAS studio </li>
+            <li> SolidWorks</li>
+            <li> AutoCAD</li>
+          </ul>
+          <ul>
+            <li> Python </li>
+            <li> SQL</li>
+            <li> MATLAB</li>
+          </ul>
+
+      </div>
+    </section>
+  </div>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Shahat Space</p>
+  </footer>
+
+</body>
+<script src="./js/app.js" charset="utf-8"></script>
+</html>
